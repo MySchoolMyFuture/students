@@ -5,19 +5,19 @@ $(document).ready(function () {
         indicators: false
     });
 
-
+    
     // move next carousel
     $('.moveNextCarousel').click(function (e) {
         e.preventDefault();
         e.stopPropagation();
-        $('.carousel').carousel('next');
+        $('#divbanner').carousel('next');
     });
 
     // move prev carousel
     $('.movePrevCarousel').click(function (e) {
         e.preventDefault();
         e.stopPropagation();
-        $('.carousel').carousel('prev');
+        $('#divbanner').carousel('prev');
     });
 
     // move prev carousel

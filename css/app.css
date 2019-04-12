@@ -2,17 +2,25 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-  }
+}
 
-  main {
+main {
     flex: 1 0 auto;
-  }
-      
+}
+
 
 img.responsive-img,
-video.responsive-video {
+video.responsive-video {}
+
+.carousel-item img {
+    height: 500px !important;
+    display: block;
+    max-height: 500px;
+    min-width: 200px;
     max-width: 100%;
-    height: 100%;
+
+    object-fit: cover;
+    object-position: center center;
 }
 
 .contactInfo {
@@ -31,7 +39,7 @@ video.responsive-video {
     width: 25%;
     float: left;
     font-size: 20px;
-    
+
     vertical-align: middle;
     line-height: 60px;
     /* border-right: 1px solid #f5c083; */
@@ -54,7 +62,7 @@ video.responsive-video {
 .section {
     background-color: #2d7fc7 !important;
     margin-top: 1px !important;
-    color:white;
+    color: white;
 }
 
 nav .nav-wrapper {
@@ -73,10 +81,11 @@ nav .nav-wrapper {
 
     height: auto;
 }
-.card-title{
+
+.card-title {
     font: bold;
     font-family: 'Times New Roman', Times, serif;
-    margin-top:-3px;
+    margin-top: -3px;
 }
 
 .material-icons {
@@ -95,10 +104,12 @@ nav .nav-wrapper {
     -moz-osx-font-smoothing: grayscale;
     color: #12665b;
 }
-.input-field>label{
-    color:#3d2349;
-font-weight: 500;
+
+.input-field>label {
+    color: #3d2349;
+    font-weight: 500;
 }
+
 .middle-indicator {
     position: absolute;
     top: 50%;
@@ -125,51 +136,88 @@ a.middle-indicator-text {
     visibility: hidden;
 }
 
-#divNews{
+#divNews {
     height: 57px !important;
 }
-.page-footer{
+
+.page-footer {
     background-color: black;
 }
 
-.txtheader{
-    
-        font-size: larger;
-        font-family: sans-serif;
-        color: brown;
-        font-weight: bolder;
-    
+.txtheader {
+
+    font-size: larger;
+    font-family: sans-serif;
+    color: brown;
+    font-weight: bolder;
+
 }
-
-
+.logo{
+    height: 100px !important;
+}
 
 /* Smartphones (portrait) ----------- */
-@media only screen
-and (max-width : 600px) {
-   
+@media only screen and (max-width : 600px) {
+
+    .carousel-item img {
+        height: 300px !important;
+        max-height: 300px;
+
+        object-fit: cover;
+        object-position: center center;
+    }
+    .logo{
+        height: auto !important;
+    }
+    .img{
+        max-width: 100%;
+        height: 142px;
+        object-fit: scale-down;
+        object-position: center;
+    }
+    
+.carousel {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 300px;
+    -webkit-perspective: 500px;
+    perspective: 500px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
 }
-@media only screen
-and (max-width : 992px) {
-   
+
+    img {
+        display: block;
+        height: auto;
+        max-width: 100%;
+        width: 100%;
+        vertical-align: middle;
+    }
+
+    
 }
- 
+
+@media only screen and (max-width : 992px) {}
+
 
 /* Desktops and laptops ----------- */
-@media only screen
-and (min-width : 993px ) {
-    .aboutSchool{
+@media only screen and (min-width : 993px) {
+    .aboutSchool {
         margin-left: 26%;
     }
 }
 
 /* Large screens ----------- */
-@media only screen
-and (min-width : 1200px) {
-   .aboutSchool{
-       margin-left: 26%;
-   }
+@media only screen and (min-width : 1200px) {
+    .aboutSchool {
+        margin-left: 26%;
+    }
 }
-p{
+
+p {
     text-align: justify;
-  text-justify: inter-word;
+    text-justify: inter-word;
 }
