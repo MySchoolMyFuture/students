@@ -5,7 +5,7 @@ $(document).ready(function () {
         indicators: false
     });
 
-    
+    $('.collapsible').collapsible();
     // move next carousel
     $('.moveNextCarousel').click(function (e) {
         e.preventDefault();

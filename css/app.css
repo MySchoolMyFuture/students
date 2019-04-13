@@ -155,7 +155,35 @@ a.middle-indicator-text {
 .logo{
     height: 100px !important;
 }
+.collapsible-header{
+     background:#d64161;
+     color:white;
 
+}
+.collapsible-body{
+    
+}
+.tagline{
+    font-family: "Edwardian Script ITC", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 39px;
+    max-width: 100%;
+    width: 100%;
+    font-weight: bold;
+    color: teal;
+    margin:auto;
+}
+.taglineDirector {
+    font-family: Edwardian Script CURSIVE;
+    font-size: 20px;
+    max-width: 100%;
+    width: 100%;
+    font-weight: bold;
+    color: rgb(71, 0, 0);
+    margin: auto;
+}
+p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width : 600px) {
 
