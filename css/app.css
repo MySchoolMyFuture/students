@@ -76,18 +76,30 @@ nav .nav-wrapper {
     overflow: hidden;
     height: auto !important;
 }
-
+b{
+    color:olivedrab;
+}
 .card.small {
 
     height: auto;
+    
+    border: 1px solid transparent;
+}
+.card-reveal{
+    background: #154c62 !important;
+    color:whitesmoke;
 }
 
 .card-title {
     font: bold;
     font-family: 'Times New Roman', Times, serif;
     margin-top: -3px;
+    color:#154c62;
+    
 }
-
+.card-content{
+    background:#154c62;
+}
 .material-icons {
     font-family: 'Material Icons';
     font-weight: normal;
@@ -163,6 +175,19 @@ a.middle-indicator-text {
 .collapsible-body{
     
 }
+.card .card-image img {
+    display: block;
+    border-radius: 2px 2px 0 0;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center center;
+}
 .tagline{
     font-family: "Edwardian Script ITC", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 39px;
@@ -180,6 +205,22 @@ a.middle-indicator-text {
     font-weight: bold;
     color: rgb(71, 0, 0);
     margin: auto;
+}
+
+table {
+    border: 1px solid;
+}
+
+table.striped>tbody>tr:nth-child(odd) {
+
+    background-color: rgba(170, 213, 213, 0.5);
+
+}
+
+table.highlight>tbody>tr:hover {
+
+    background-color: rgba(255, 181, 145, 0.5);
+
 }
 p{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif

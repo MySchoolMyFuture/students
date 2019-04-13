@@ -4,7 +4,13 @@ $(document).ready(function () {
         fullWidth: true,
         indicators: false
     });
-
+    
+    autoplay();
+    function autoplay() {
+        $('.carousel').carousel('next');
+        setTimeout(autoplay, 10000);
+    }
+    
     $('.collapsible').collapsible();
     // move next carousel
     $('.moveNextCarousel').click(function (e) {
@@ -42,16 +48,12 @@ $(document).ready(function () {
         indicators: false,
         duration: 20
     });
-    
+   
     $('.slider').removeAttr('style');
     $('.slides').removeAttr('style');
     $("#divNews").removeAttr('style');
     $('.fixed-action-btn').floatingActionButton();
-    autoplay();
-    function autoplay() {
-        $('.carousel').carousel('next');
-        setTimeout(autoplay, 10000);
-    }
+   
 
     $('ul.tabs').on('click', 'a', function (e) {
         
