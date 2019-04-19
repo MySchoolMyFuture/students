@@ -7,7 +7,9 @@ body {
 main {
     flex: 1 0 auto;
 }
-
+iframe{
+    width: 100%;
+}
 
 img.responsive-img,
 video.responsive-video {}
