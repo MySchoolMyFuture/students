@@ -50,11 +50,12 @@ video.responsive-video {}
     color: white;
     margin-top: -15px;
 }
-
 .news {
     color: white;
     font-size: 16px;
     font-weight: bolder;
+    text-align: -webkit-center !important;
+    margin-top: 1px !important;
 }
 
 .sliding {
@@ -229,7 +230,14 @@ p{
 }
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width : 600px) {
-
+    .news {
+        color: white;
+        font-size: 16px;
+        font-weight: bolder;
+        left: 12px !important;
+        margin-top: 1px;
+        
+    }
     .carousel-item img {
         height: 300px !important;
         max-height: 300px;
